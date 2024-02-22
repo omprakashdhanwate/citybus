@@ -1,3 +1,4 @@
+import { Header } from "../ui/components/header";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
@@ -6,12 +7,13 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   return (
-    <div
-      className={
-        "h-screen relative flex justify-center items-center text-black text-5xl"
-      }
-    >
-      <h1>Radium React.js Template</h1>
+    <div>
+      <div className="flex justify-center items-center my-2">
+        <Header />
+      </div>
+      <div className="h-screen relative flex justify-center items-center flex-col">
+        <h1 className="text-8xl text-center">Welcome to CityBus</h1>
+      </div>
     </div>
   );
 }
