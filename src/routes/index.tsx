@@ -12,7 +12,7 @@ function Home() {
         <Header />
       </div>
       <div className="h-screen relative flex justify-center items-center flex-col">
-        <h1 className="text-8xl text-center">Welcome to CityBus</h1>
+        <h2 className="text-8xl text-center">Welcome to CITYBUS</h2>
       </div>
     </div>
   );
