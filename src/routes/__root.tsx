@@ -1,3 +1,6 @@
+import { ThemeProvider } from "@/lib/theme-provider";
+import { Footer } from "@/ui/components/footer";
+import { Header } from "@/ui/components/header";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
 
 export const Route = createRootRoute({
@@ -6,8 +9,12 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <main>
-      <Outlet />
-    </main>
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <main>
+        <Header />
+        <Outlet />
+        <Footer />
+      </main>
+    </ThemeProvider>
   );
 }
