@@ -4,7 +4,11 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useScroll, motion, useMotionValueEvent } from "framer-motion";
 import { Button } from "@/ui/primitives/button";
-import { ChevronUpIcon, ChevronDownIcon } from "@radix-ui/react-icons";
+import {
+  ChevronUpIcon,
+  ChevronDownIcon,
+  ArrowRightIcon,
+} from "@radix-ui/react-icons";
 
 export function Header() {
   const [showNav, setShowNav] = useState<boolean>(false);
@@ -106,12 +110,12 @@ export function Header() {
         >
           <Link to={"/"}>Tickets</Link>
         </li>
-        <li
-          className={
-            "rounded-2xl text-base font-medium hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white text-white dark:text-black px-4 py-[0.35rem]"
-          }
-        >
-          <Link to={"/"}>Explore</Link>
+        <li>
+          <Link to={"/routes"}>
+            <Button className={"rounded-2xl"} variant={"secondary"}>
+              Check Routes <ArrowRightIcon className={"ml-2"} />
+            </Button>
+          </Link>
         </li>
         <li
           className={

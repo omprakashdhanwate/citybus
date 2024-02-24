@@ -12,10 +12,10 @@ function About() {
         Welcome to CityBus – Your Gateway to Effortless and Enjoyable Travel!
       </h1>
       <p className={"text-zinc-400 my-4"}>
-        Greetings, vgseven! We're delighted to introduce you to CityBus, a
-        revolutionary platform designed to transform your commuting experience.
-        At CityBus, we understand the challenges of modern travel, and we've
-        crafted a solution that puts you in control.
+        We're delighted to introduce you to CityBus, a revolutionary platform
+        designed to transform your commuting experience. At CityBus, we
+        understand the challenges of modern travel, and we've crafted a solution
+        that puts you in control.
       </p>
       <h1 className={"text-xl text-zinc-300 my-4"}>Our Story:</h1>
       <p className={"text-zinc-400 my-4"}>

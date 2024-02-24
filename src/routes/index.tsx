@@ -1,6 +1,6 @@
 import { Button } from "@/ui/primitives/button";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: () => <Home />,
@@ -33,10 +33,14 @@ function Home() {
           CityBus is designed to simplify your journey.
         </p>
         <div className={"flex gap-4"}>
-          <Button className={"rounded-2xl"}>Get Started</Button>
-          <Button className={"rounded-2xl"} variant={"secondary"}>
-            Check Routes <ArrowRightIcon className={"ml-2"} />
-          </Button>
+          <Link to="/routes">
+            <Button className={"rounded-2xl"}>Get Started</Button>
+          </Link>
+          <Link to="/routes">
+            <Button className={"rounded-2xl"} variant={"secondary"}>
+              Check Routes <ArrowRightIcon className={"ml-2"} />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
